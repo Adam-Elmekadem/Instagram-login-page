@@ -1,0 +1,208 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.images {
+    margin-right: 300px;
+}
+
+.pic1 {
+    background-image: url(pic1.svg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 300px;
+    height: 520px;
+    margin-top: 20px;
+    position: relative;
+    translate: (-50%, -20%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pic2 {
+    background-image: url(pic2.svg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 520px;
+    position: absolute;
+    margin-top: -470px;
+    left: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: changePicture 10s ease infinite;
+}
+
+@keyframes changePicture {
+    0% {
+        background-image: url(pic2.svg);
+    }
+    50% {
+        background-image: url(pic3.svg);
+    }
+    100% {
+        background-image: url(pic2.svg);
+    }
+}
+
+
+  .pic5 {
+      background-image: url(SliderWidget.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 240px;
+      height: 80px;
+      position: absolute;
+      margin-top: -300px;
+      left: 7%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      animation: moveLeftRight 8s ease-in-out infinite;
+  }
+
+  @keyframes moveLeftRight {
+      0% {
+          left: 7%;
+      }
+      50% {
+          left: 9%;
+      }
+      100% {
+          left: 7%;
+      }
+  }
+
+.connect {
+    background-color: #fff;
+    width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: "Beauty Mountains", sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #ff036c;
+}
+
+input[type="submit"] {
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2282ff;
+}
+
+.hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr hr {
+    width: 100%;
+    margin: 0 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.facebook {
+    margin-left: 15px;
+}
+
+.fa-brands {
+    font-size: 25px;
+    
+}
+
+.mdpo {
+    position: relative;
+    left: 25%;
+    margin-bottom: -100px;
+}
+
+p > a {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.inscrivez {
+    font-size: .9em;
+    text-align: center;
+}
+
+.inscrivez a {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.add {
+    border: 1px  solid #ccc;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.app {
+    text-align: center;
+}
+
+.app-img {
+    margin-top: -30px;
+}
+
+.app-img img {
+    width: 150px;
+    height: auto;
+}
+
+.app p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: px;
+}
